@@ -1,0 +1,43 @@
+/* Home.css */
+@import './GlobalTheme.css';
+
+.home-container {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-lg);
+  background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-end) 100%);
+}
+
+.home-content {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.welcome-card {
+  box-shadow: var(--shadow-lg);
+  border-radius: var(--radius-md);
+}
+
+.stat-card {
+  transition: var(--transition-normal);
+  box-shadow: var(--shadow-sm);
+  border-radius: var(--radius-md);
+  height: 100%;
+}
+
+.stat-card:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-4px);
+}
+
+@media (max-width: 768px) {
+  .home-container {
+    padding: var(--space-sm);
+  }
+  
+  .welcome-card {
+    margin: 0;
+  }
+}
